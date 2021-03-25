@@ -171,7 +171,7 @@ async def main(bot, message):
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]
+					[[InlineKeyboardButton("Open Link", url=share_link)]]
 				),
 				disable_web_page_preview=True
 			)
@@ -197,7 +197,7 @@ async def main(bot, message):
 		try:
 			forwarded_msg = await message.forward(DB_CHANNEL)
 			file_er_id = forwarded_msg.message_id
-			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_er_id}"
+			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=rexona_{file_er_id}"
 			CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Get Sharable Stored Link", url=share_link)]]))
 			if message.chat.username:
 				await forwarded_msg.reply_text(f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
@@ -288,11 +288,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
-					],
-					[
 						InlineKeyboardButton("Go Home", callback_data="gotohome"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+	
 					]
 				]
 			)
@@ -304,9 +301,6 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
-					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 						InlineKeyboardButton("Go Home", callback_data="gotohome")
@@ -322,12 +316,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
-					],
-					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton("About Bot", callback_data="aboutbot")
 					]
 				]
 			)
@@ -374,12 +363,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
-					],
-					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton("About Bot", callback_data="aboutbot")
 					]
 				]
 			)
