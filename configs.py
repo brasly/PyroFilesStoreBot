@@ -24,13 +24,10 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** R3X0N4
-👥 **Support Group:** [Linux Repositories](https://t.me/linux_repo)
-
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
+🧑🏻‍💻 **Developer:** #R3X0N4
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** #R3X0N4
 
 Developer is Super Noob. Just Learning from Official Docs. Please Donate the developer for Keeping the Service Alive.
 
