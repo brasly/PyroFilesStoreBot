@@ -24,8 +24,7 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @AbirHasan2005
-
+🧑🏻‍💻 **Developer:** R3X0N4
 👥 **Support Group:** [Linux Repositories](https://t.me/linux_repo)
 
 📢 **Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
