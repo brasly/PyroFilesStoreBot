@@ -345,7 +345,7 @@ async def button(bot, cmd: CallbackQuery):
 				)
 				return
 			except Exception:
-				await cmd.message.edit
+				await cmd.message.edit(
 					text="Something went Wrong, try again later.",
 					parse_mode="markdown",
 					disable_web_page_preview=True
