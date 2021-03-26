@@ -65,7 +65,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me.",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -90,7 +90,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong, try again later.",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -115,7 +115,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me.",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -131,7 +131,7 @@ async def start(bot, cmd):
 								InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
 							],
 							[
-								InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_id}")
+								InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://t.me/{BOT_USERNAME}?start=rexona_{file_id}")
 							]
 						]
 					),
@@ -141,7 +141,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong, try again later.",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -323,7 +323,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me.",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -345,8 +345,8 @@ async def button(bot, cmd: CallbackQuery):
 				)
 				return
 			except Exception:
-				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+				await cmd.message.edit
+					text="Something went Wrong, try again later.",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
