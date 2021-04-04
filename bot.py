@@ -99,13 +99,6 @@ async def start(bot, cmd):
 			HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
 			parse_mode="Markdown",
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot")
-					]
-				]
-			)
 		)
 	else:
 		if Config.UPDATES_CHANNEL:
@@ -355,13 +348,6 @@ async def button(bot, cmd: CallbackQuery):
 			text=HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
 			parse_mode="Markdown",
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot")
-					]
-				]
-			)
 		)
 
 Bot.run()
